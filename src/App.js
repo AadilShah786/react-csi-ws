@@ -2,13 +2,18 @@
 import './App.css';
 import Counter from './Counter';
 import DataFetcher from './useeffect';
+import DataFetcher2 from './useeffect2';
 import App2 from './route1';
+import Prop from './prop';
+
 function App() {
   return (
     <div className="App">
-      {/* <Counter/> */}
-      {/* <DataFetcher/> */}
-      <App2/>
+      {/* <Counter/> usestate example*/}
+      {/* <DataFetcher/> useeffect api example*/}
+      {/* <DataFetcher2/> useeffect increment example*/}
+      {/* <App2/>  route example*/}
+      {/* <Prop/>  props example */}
     </div>
   );
 }

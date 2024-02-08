@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const CounterWithEffect = () => {
+function IncrementEffect(prop){
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ const CounterWithEffect = () => {
   );
 };
 
-export default CounterWithEffect;
+export default IncrementEffect;

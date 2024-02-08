@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import Datafetcher from './useeffect';
 
 const Counter = () => {
   // useState returns an array with two elements: the current state value and a function that lets you update it.
@@ -13,6 +14,7 @@ const Counter = () => {
     <div>
       <h1>Counter: {count}</h1>
       <button onClick={handleIncrement}>Increment</button>
+      {/* <Datafetcher num={count}/> */}
     </div>
   );
 };

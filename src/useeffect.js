@@ -1,51 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
-const DataFetcher = () => {
+
+// function Datafetcher(prop) {
+function Datafetcher() {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating data fetching from a local file
-    const fetchData = async () => {
-      try {
-        // Simulating an asynchronous delay with setTimeout
-        setTimeout(() => {
-          // Simulated data (replace this with actual data fetching logic)
-          const simulatedData = {
-            title: 'Sample Data',
-            content: 'This is some sample data fetched from a local source.',
-          };
+    // Fetch data from an API
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(result => setData(result))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []); // The empty dependency array ensures that this effect runs only once on component mount
 
-          setData(simulatedData);
-          setLoading(false);
-        }, 1000);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      }
-    };
-
-    // Call the fetchData function when the component mounts
-    fetchData();
-
-    // The return function in useEffect can be used for cleanup (componentWillUnmount in class components)
-    return () => {
-      console.log('Component is unmounting');
-    };
-  }, []); // The empty dependency array [] means this effect runs once after the initial render
-
+  // Display the fetched data
   return (
     <div>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div>
-          <h1>Data:</h1>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      )}
+      <h1>Fetched Data:</h1>
+      <div>{JSON.stringify(data)}</div>
     </div>
   );
 };
 
-export default DataFetcher;
+export default Datafetcher;

@@ -19,7 +19,7 @@ const Contact = () => (
 );
 
 // App component, the main entry point of the application
-const App = () => (
+const RouteEg = () => (
   <Router>
     <div>
       <nav>
@@ -48,4 +48,4 @@ const App = () => (
   </Router>
 );
 
-export default App;
+export default RouteEg;

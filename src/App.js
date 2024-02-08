@@ -10,13 +10,13 @@ import Uceg from './usecontexteg';
 function App() {
   return (
     <div className="App" >
-      {/* <Prop message="this is prop example"/>  props example */}
+      <Prop message="this is prop example"/>  props example
       {/* <Counter/> usestate example */}
       {/* <DataFetcher/> useeffect api example */}
       {/* <IncrementEffect/> useeffect increment example */}
       {/* <RouteEg/>  route example */}
       {/* <Pdrill1 message="this is drilling"/> */}
-      <Uceg/>
+      {/* <Uceg/> */}
     </div>
   );
 }
@@ -31,7 +31,7 @@ export default App;
 
 
 
-
+//routing example
 
 // import './App.css';
 // import Counter from './Counter';

@@ -5,7 +5,8 @@ import DataFetcher from './useeffect';
 import IncrementEffect from './useeffect2';
 import RouteEg from './route1';
 import Prop from './prop';
-
+import Pdrill1 from './pdrill1';
+import Uceg from './usecontexteg';
 function App() {
   return (
     <div className="App" >
@@ -13,7 +14,8 @@ function App() {
       {/* <Counter/> usestate example */}
       {/* <DataFetcher/> useeffect api example */}
       {/* <IncrementEffect/> useeffect increment example */}
-      <RouteEg/>  route example
+      {/* <RouteEg/>  route example */}
+      <Pdrill1 message="this is drilling"/>
     </div>
   );
 }

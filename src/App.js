@@ -15,7 +15,8 @@ function App() {
       {/* <DataFetcher/> useeffect api example */}
       {/* <IncrementEffect/> useeffect increment example */}
       {/* <RouteEg/>  route example */}
-      <Pdrill1 message="this is drilling"/>
+      {/* <Pdrill1 message="this is drilling"/> */}
+      <Uceg/>
     </div>
   );
 }
